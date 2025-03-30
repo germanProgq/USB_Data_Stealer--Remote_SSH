@@ -638,7 +638,7 @@ static char* run_backup_as_admin_headless(void) {
             if (!p || (p2 && p2 > p)) p = p2;
             if (p) {
                 *p = '\0';
-                _mkdir(tmp);
+                mkdir(tmp);
             }
 #else
             char *p = strrchr(tmp, '/');
